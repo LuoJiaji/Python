@@ -78,7 +78,7 @@ while True:
     rotated_sprite = pygame.transform.rotate(sprite, rotation)
     # 转向后，图片的长宽会变化，因为图片永远是矩形，为了放得下一个转向后的矩形，外接的矩形势必会比较大
     w, h = rotated_sprite.get_size()
-    # 获得绘制图片的左上角（感谢pltc325网友的指正）
+    # 获得绘制图片的左上角
     sprite_draw_pos = Vector2(position.x - w / 2, position.y - h / 2)
 
     time_passed = clock.tick()
